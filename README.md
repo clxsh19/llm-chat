@@ -18,7 +18,7 @@ It features real-time messaging, chat management (rename/delete), authentication
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer            | Technology                                     |
 | ---------------- | ---------------------------------------------- |
@@ -33,7 +33,7 @@ It features real-time messaging, chat management (rename/delete), authentication
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 1. **Clone the repository**
 
@@ -56,3 +56,7 @@ It features real-time messaging, chat management (rename/delete), authentication
 
    npm run dev
    ```
+## ScreenShots
+<img width="1366" height="768" alt="2025-10-07-17:04:56-screenshot" src="https://github.com/user-attachments/assets/52b75249-ae54-44b9-9a08-1c1265fd50da" />
+<img width="1366" height="768" alt="2025-10-07-17:03:45-screenshot" src="https://github.com/user-attachments/assets/21dc39f9-080b-474f-b990-58b227b75527" /><img width="1366" height="768" alt="2025-10-07-17:06:08-screenshot" src="https://github.com/user-attachments/assets/e4619914-b482-41a7-b87e-726bd9f3e4ae" />
+
