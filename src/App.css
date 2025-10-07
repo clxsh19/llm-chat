@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap');
+
+:root {
+  --color-text: #111827; /* dark gray for light mode text */
+  /* --color-bg: #f9fafb;  */
+  --color-scroll: #c4c7cf;
+  --color-pre-bg: #f5f5f5;
+  --color-blockquote-bg: #f3f4f6;
+  --color-blockquote-border: #3b82f6;
+}
+
+.dark {
+  --color-text: #f3f4f6; /* light text */
+  /* --color-bg: #121212; */
+  --color-scroll: #374151;
+  --color-pre-bg: #202023;
+  --color-blockquote-bg: #1f2937;
+  --color-blockquote-border: #60a5fa;
+}
+
+.markdown-container {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.markdown-container p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3,
+.markdown-container h4 {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.user-bubble {
+  font-family: 'Fira Code', monospace;
+}
+
+.markdown-container code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.875rem;
+  background-color: var(--color-code-bg);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.markdown-container pre {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.875rem;
+  background-color: var(--color-pre-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-container blockquote {
+  border-left: 4px solid var(--color-blockquote-border);
+  background-color: var(--color-blockquote-bg);
+  padding-left: 1rem;
+  padding-top: 2px;
+  padding-right: 8px;
+  margin: 0.75rem;
+  border-radius: 0.25rem;
+  color: var(--color-text);
+}
+
+/* Links */
+.markdown-container a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.markdown-container a:hover {
+  color: #2563eb;
+}
+
+/* Lists */
+.markdown-container ul,
+.markdown-container ol {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.markdown-container li {
+  margin-bottom: 0.25rem;
+}
+
+/* Tables */
+.markdown-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+}
+
+/* --- MATH (KaTeX) --- */
+.markdown-container .katex {
+  font-size: 1.05rem;
+  color: inherit;
+}
+.markdown-container .katex-display {
+  margin: 0.75rem 0;
+  overflow-x: auto;
+}
+
+.markdown-container th,
+.markdown-container td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+}
+
+.markdown-container th {
+  font-weight: 600;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scroll) var(--color-pre-bg);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-pre-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-pre-bg);
+  border-radius: 12px;
+  border: 1px solid var(--color-blockquote-bg);
+}
