@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { TbUpload } from 'react-icons/tb';
+// import { TbUpload } from 'react-icons/tb';
 import { FaArrowUp } from 'react-icons/fa';
 import { useChat } from '../context/chat/UseChat';
 import { useAuth } from '../context/auth/UseAuth';
