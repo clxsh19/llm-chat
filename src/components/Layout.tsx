@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import NavBar from './NavBar';
 import SideBar from './SideBar';
 import MessageInput from './MessageInput';
+import { ToastContainer } from 'react-toastify';
 
 export default function Layout({
   showAuthModal,
@@ -30,6 +31,14 @@ export default function Layout({
 
   return (
     <div className="flex bg-white dark:bg-neutral-900 flex h-screen w-full overflow-hidden">
+      <ToastContainer
+        position="bottom-left"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        theme={isDark ? 'dark' : 'light'}
+      />
       <SideBar
         showSideBar={showSideBar}
         setShowSideBar={setShowSideBar}

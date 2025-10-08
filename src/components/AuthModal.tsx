@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { MdClose } from 'react-icons/md';
 import { useAuth } from '../context/auth/UseAuth';
 import { signup, login, loginWithGoogle } from '../firebase/authService';
+import { toast } from 'react-toastify';
 
 // define schema for form
 const authSchema = z.object({
@@ -37,18 +38,18 @@ export default function AuthModal({ onClose, isOpen }: AuthModalProps) {
       } else {
         await signup(data.email, data.password);
       }
-      alert('Success!');
+      toast.success('Success!');
     } catch (err: any) {
-      alert(err.message);
+      toast.error('Failed! Please Try Again');
     }
   };
 
   const handleGoogle = async () => {
     try {
       await loginWithGoogle();
-      alert('Google login success!');
+      toast.success('Login Success!');
     } catch (err: any) {
-      alert(err.message);
+      toast.error('Failed! Please Try Again');
     }
   };
   const buttonAnimationStyle =
