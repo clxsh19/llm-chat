@@ -5,7 +5,6 @@ import { AuthProvider } from './context/auth/AuthProvider';
 import { ChatProvider } from './context/chat/ChatProvider';
 import AuthModal from './components/AuthModal';
 import ChatRoomView from './components/ChatRoomView';
-import { ToastContainer } from 'react-toastify';
 
 function App() {
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -13,17 +12,6 @@ function App() {
   return (
     <>
       <AuthProvider>
-        <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
         {showAuthModal && (
           <AuthModal
             onClose={() => setShowAuthModal(false)}

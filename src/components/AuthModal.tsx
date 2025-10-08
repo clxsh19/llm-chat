@@ -40,6 +40,7 @@ export default function AuthModal({ onClose, isOpen }: AuthModalProps) {
       }
       toast.success('Success!');
     } catch (err: any) {
+      console.error(err.message);
       toast.error('Failed! Please Try Again');
     }
   };
@@ -49,6 +50,7 @@ export default function AuthModal({ onClose, isOpen }: AuthModalProps) {
       await loginWithGoogle();
       toast.success('Login Success!');
     } catch (err: any) {
+      console.error(err.message);
       toast.error('Failed! Please Try Again');
     }
   };
